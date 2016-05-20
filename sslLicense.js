@@ -8,13 +8,16 @@ var fs = require('fs');
 
 var keyPath = 'ssl/privkey.pem';
 var certPath = 'ssl/cert.pem';
+var caPath = 'ssl/chain.pem';
 
 var hskey = fs.readFileSync(keyPath);
 var hscert = fs.readFileSync(certPath);
+var hsca = fs.readFileSync(caPath);
 
 var options = {
     key : hskey,
-    cert : hscert
+    cert : hscert,
+    ca: hsca
 };
 
 //ssl object

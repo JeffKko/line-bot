@@ -7,9 +7,9 @@ var router = express.Router();
 var bodyParser = require('body-parser');
 var request = require("request");
 
-var CHANNEL_ID = '<Your CHANNEL_ID>',
-    CHANNEL_SERECT = '<Your CHANNEL_SERECT>',
-    MID = '<Your MID>';
+var CHANNEL_ID = '<YOUR CHANNEL_ID>',
+    CHANNEL_SERECT = '<YOUR CHANNEL_SERECT>',
+    MID = '<YOUR MID>';
 
 
 /* POST callback listing. */
@@ -22,7 +22,7 @@ router.post('/', function (req, res, next) {
     for(var i=0; i<result.length; i++){
         var data = result[i]['content'];
         console.log('receive: ', data);
-
+        //go echo
         sendTextMessage(data.from, data.text);
     }
 });

@@ -9,6 +9,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var lineCallback = require('./routes/lineCallback');
+var facebookCallback = require('./routes/facebookCallback');
+var sendJson = require('./routes/sendJson');
+
 
 var app = express();
 
@@ -41,6 +44,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/callback', lineCallback);
+app.use('/webhook', facebookCallback);
+app.use('/sendJson', sendJson);
 
 
 // catch 404 and forward to error handler
