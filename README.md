@@ -19,9 +19,11 @@
 
 <p>Server : Synology NAS (DMS : 6.0) </p>
 <p>NodeJS版本 : V4 </p>
-<p>Secure憑證 : Lets Encrypt X3 </p>
+<p>Secure憑證 : Let's Encrypt X3 </p>
 
 #心得：
 
-<p>LINE開發者後台的callback url不會回傳任何Log，後來去玩FB Bot才發現錯誤log，在這卡好久XD</p>
+<p>LINE開發者後台的callback url不會回傳任何Log，後來去玩FB Bot才發現錯誤Log，在這卡好久XD</p>
+
+<p>有任何問題歡迎連絡我 : b3589481400@gmail.com
 
