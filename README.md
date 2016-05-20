@@ -17,7 +17,7 @@
 
 # 敝人執行環境：
 
-<p>Server : Synology NAS (DMS : 6.0) </p>
+<p>Server : Synology NAS (DSM : 6.0) </p>
 <p>NodeJS版本 : V4 </p>
 <p>Secure憑證 : Let's Encrypt X3 </p>
 <br>
@@ -26,6 +26,8 @@
 #心得：
 
 <p>LINE開發者後台的callback url不會回傳任何Log，後來去玩FB Bot才發現錯誤Log，在這卡好久XD</p>
+<p>因為不想把程式架在免費空間或是代管伺服器上面</p>
+<p>所以花最多時間的是在研究怎麼讓NodeJS執行在NAS上面，並且可以接應https API</p> 
 
 <p>有任何問題歡迎連絡我 : b3589481400@gmail.com
 
